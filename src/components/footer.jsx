@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import ScrollReveal from "scrollreveal"
 const Footer  = () =>  {
-   
+ const titleRef = useRef(null);
+  const titlRef = useRef(null);
+ useEffect(() => {
+    ScrollReveal().reveal(titlRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+     ScrollReveal().reveal(titleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  })
   return (
     <footer className="bg-[2A4E8D] text-white px-28 py-16 xl:px-0 w-full  ">
-      <div className="px-20 xl:px-12 nb:px-5 grid grid-cols-4 gap-8 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1">
+      <div ref={titlRef} className="px-20 xl:px-12 nb:px-5 grid grid-cols-4 gap-8 2xl:grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1">
        
         <div>
           <h4 className="text-xl font-semibold mb-4 text-[#F7EF8A]">Info</h4>

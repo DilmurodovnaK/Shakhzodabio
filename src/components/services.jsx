@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useEffect, useRef } from 'react';
+import ScrollReveal from "scrollreveal"
 import book from "../images/book2.png";
 import thread from "../images/thread2.png";
 import art from "../images/art2.png";
@@ -23,9 +23,29 @@ export const card = [
 ];
 
 const Services = () => {
+     const titleRef = useRef(null);
+  const titlRef = useRef(null);
+ useEffect(() => {
+    ScrollReveal().reveal(titlRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+     ScrollReveal().reveal(titleRef.current, {
+      origin: 'top',
+      distance: '80px',
+      duration: 1000,
+      delay: 300,
+      easing: 'ease',
+      reset: false,
+    });
+  })
   return (
     <div className="w-full px-28 py-16 bg-black xl:px-0">
-      <div className="px-20 xl:px-12 nb:px-5">
+      <div ref={titleRef} className="px-20 xl:px-12 nb:px-5">
         <h2 className="font-bold text-[30px] text-[#F7EF8A] text-center">Servislar</h2>
         <div className="flex justify-center sm:flex-col sm:items-center gap-4 mt-6">
           {card.map((service, index) => (
