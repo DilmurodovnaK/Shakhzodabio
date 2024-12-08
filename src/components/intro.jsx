@@ -33,7 +33,7 @@ const Intro = () => {
             Fotihova Khalilova Shakhzoda Dilmurodovna
           </h1>
           <p className='font-medium text-[23px] text-white leading-[30px] max-w-[580px] md:font-light md:text-[15px] md:leading-[22px]'>
-            Maktabgacha Ta`lim Pedagogi Sohasi <br /> Oliy Toifadagi Pedagog <br />Libos Dizayneri
+            Maktabgacha Ta`lim Pedagogi  <br /> Oliy Toifadagi Pedagog <br />Libos Dizayneri
           </p>
         </div>
 

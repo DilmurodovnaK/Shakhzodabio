@@ -42,15 +42,15 @@ const About = () => {
          <span className=' text-white md:text-[16px]  font-medium text-[19px]'>Telefon Raqam</span>
          <span className=' text-white md:text-[16px]  font-medium text-[19px]'></span>
          <span className=' text-white md:text-[16px] font-medium text-[19px]'>Email</span>
-         <span className=' text-white md:text-[16px] font-medium text-[19px]'>Yashash Joyi</span>
-         <span className=' text-white md:text-[16px]  font-medium text-[19px]'>Hobby</span>
+         <span className=' text-white md:text-[16px] font-medium text-[19px]'>Hobby</span>
+         <span className=' text-white md:text-[16px]  font-medium text-[19px]'>Yashash Joyi</span>
       </div>
       <div className='flex flex-col gap-1'>
          <span className=' text-white md:text-[16px]  font-medium text-[19px]'>: Mart 11, 2002</span>
          <span className=' text-white md:text-[16px]  font-medium text-[19px]'>: +998 971073404</span>
          <span className=' text-white md:text-[16px]  font-medium text-[19px]'>: fotixovashaxzoda@icloud.com</span>
-         <span className=' text-white md:text-[16px]  font-medium text-[19px]'>: Toshkent Shahar, Yakkasaroy Tumani, Rakat </span>
-         <span className=' text-white md:text-[16px]  font-medium text-[19px]'>: Suratga Olish, Rassomchilik</span>
+         <span className=' text-white md:text-[16px]  font-medium text-[19px]'>: Suratga Olish, Rassomchilik </span>
+         <span className=' text-white md:text-[16px]  font-medium text-[19px]'>: Toshkent Shahar, Yakkasaroy Tumani, Rakat</span>
       </div>
     </div>
     
