@@ -77,9 +77,9 @@ const Footer  = () =>  {
         <div>
           <h4 className="text-xl font-semibold text-[#F7EF8A] mb-4">Bog`lanish</h4>
           <ul className="space-y-2 text-gray-400">
-            <li><a href="https://t.me/shakhzade_f"className="hover:text-white">Telegram</a></li>
-            <li><a href="https://www.instagram.com/shakhzade_f?igsh=d2NrMW44ZHNlMnlx" className="hover:text-white">Instagram</a></li>
-            <li><a href="" className="hover:text-white">+998 971073404</a></li>
+            <li><a href=""className="hover:text-white">Telegram</a></li>
+            <li><a href="" className="hover:text-white">Instagram</a></li>
+            
          
           </ul>
         </div>
