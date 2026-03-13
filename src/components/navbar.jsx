@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-import { CodeIcon, HamburgetMenuClose, HamburgetMenuOpen } from "../components/icons"
+import {  HamburgetMenuClose, HamburgetMenuOpen } from "../components/icons"
 import logo from "../images/logo.jpg"
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const toggleDropdown = () => setIsOpen(!isOpen);
+  const ropdown = () => setIsOpen(!isOpen);
 
   return (
     <nav className="navbar fixed w-full xl:px-10 lg:px-4 md:px-5">
@@ -18,37 +18,35 @@ const Navbar = () => {
 
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            <a  href='#home' className="nav-links " onClick={handleClick}> 
-            Asosiy
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-links" onClick={handleClick}>
-            Men haqimda
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-links" id='servis' onClick={handleClick}> 
-             Servis
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-links" onClick={handleClick}>
-              Blog
-            </a>
-          </li>
-           <li className="nav-item">
-            <a className="nav-links" onClick={handleClick}>
-             Контакты
-            </a>
-          </li>
+  <a href="#about" className="nav-links" onClick={handleClick}>
+    Men haqimda
+  </a>
+</li>
+
+<li className="nav-item">
+  <a href="#servis" className="nav-links" onClick={handleClick}>
+    Servis
+  </a>
+</li>
+
+<li className="nav-item">
+  <a href="#blog" className="nav-links" onClick={handleClick}>
+    Blog
+  </a>
+</li>
+
+<li className="nav-item">
+  <a href="#contact" className="nav-links" onClick={handleClick}>
+    Контакты
+  </a>
+</li>
         </ul>
 
         {/* Language Dropdown */}
         <div className={click ? 'nav-menu active' : 'nav-menu'} style={{ }}>
 
           {/* <button
-            onClick={toggleDropdown}
+            onClick={ropdown}
             className="text-gray-700 dropdown bg-white border max-w-[300px] border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:focus:ring-gray-600"
             type="button"
           >
