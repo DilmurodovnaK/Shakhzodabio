@@ -36,7 +36,7 @@ const Shaxsiy = () => {
           <p className="font-medium text-[20px] text-white text-center max-w-[800px] items-center md:font-light md:text-[17px] leading-[30px]">
             2022-Yil Turmushga Chiqib O`z Oilamni Barpo Etib 2023-Yil Farzandlik
             Bo`ldim. Hozirda Sevikli Rafiqa Hamda Namunali Ona Vazifasida Ish
-            Olib Bormoqdaman
+            Olib Bormoqdaman.
           </p>
         </div>
 

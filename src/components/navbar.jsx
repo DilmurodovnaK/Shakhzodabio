@@ -10,7 +10,7 @@ const Navbar = () => {
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="navbar w-full xl:px-10 lg:px-4 md:px-5">
+    <nav className="navbar fixed w-full xl:px-10 lg:px-4 md:px-5">
       <div className="nav-container flex">
         <a className="nav-logo">
         <img src={logo} alt="" width={100} height={100}/>
@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            <a  href='#home' className="nav-links " onClick={handleClick}>
+            <a  href='#home' className="nav-links " onClick={handleClick}> 
             Asosiy
             </a>
           </li>
@@ -28,7 +28,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-links" onClick={handleClick}>
+            <a className="nav-links" id='servis' onClick={handleClick}> 
              Servis
             </a>
           </li>

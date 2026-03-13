@@ -44,9 +44,9 @@ const Services = () => {
     });
   })
   return (
-    <div className="w-full px-28 py-16 bg-black xl:px-0">
+    <div  id='servis' className="w-full px-28 py-16 bg-black xl:px-0">
       <div ref={titleRef} className="px-20 xl:px-12 nb:px-5">
-        <h2 className="font-bold text-[30px] text-[#F7EF8A] text-center">Servislar</h2>
+        <h2  className="font-bold text-[30px] text-[#F7EF8A] text-center">Servislar</h2>
         <div className="flex justify-center sm:flex-col sm:items-center gap-4 mt-6">
           {card.map((service, index) => (
             <div

@@ -2,6 +2,7 @@ import About from "./components/about";
 import Blog1 from "./components/blog1";
 import Blog2 from "./components/blog2";
 import Blog3 from "./components/blog3";
+import Blog4 from "./components/blog4";
 import Footer from "./components/footer";
 import Intro from "./components/intro";
 import Navbar from "./components/navbar";
@@ -16,6 +17,7 @@ export default function App() {
       <About/>
       <Services/>
       <Blog1/>
+      <Blog4/>
       <Blog2/>
       <Blog3/>
       <Shaxsiy/>
