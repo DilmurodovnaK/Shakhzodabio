@@ -7,73 +7,49 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const ropdown = () => setIsOpen(!isOpen);
+
 
   return (
     <nav className="navbar fixed w-full xl:px-10 lg:px-4 md:px-5">
       <div className="nav-container flex">
-        <a className="nav-logo">
+        <a href='#finish' className="nav-logo">
         <img src={logo} alt="" width={100} height={100}/>
         </a>
 
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-  <a href="#about" className="nav-links" onClick={handleClick}>
+  <a href='#menhaqimda' className="nav-links" onClick={handleClick}>
     Men haqimda
   </a>
 </li>
 
 <li className="nav-item">
-  <a href="#servis" className="nav-links" onClick={handleClick}>
+  <a href='#servis' className="nav-links" onClick={handleClick}>
     Servis
   </a>
 </li>
 
 <li className="nav-item">
-  <a href="#blog" className="nav-links" onClick={handleClick}>
+  <a href='#blog' className="nav-links" onClick={handleClick}>
     Blog
   </a>
 </li>
 
 <li className="nav-item">
-  <a href="#contact" className="nav-links" onClick={handleClick}>
+  <a href='#kontakti' className="nav-links" onClick={handleClick}>
     Контакты
   </a>
 </li>
         </ul>
 
-        {/* Language Dropdown */}
-        <div className={click ? 'nav-menu active' : 'nav-menu'} style={{ }}>
-
-          {/* <button
-            onClick={ropdown}
-            className="text-gray-700 dropdown bg-white border max-w-[300px] border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-            type="button"
-          >
-            Til Tanlash
-            <svg
-              className="w-4 h-4 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button> */}
+     
 
           {isOpen && (
             <div className="absolute z-50 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700">
               <ul className="py-2 font-medium" role="menu">
                 <li>
-                  <a
-                    href="#"
+                  <a href='#finish'
+                   
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                     role="menuitem"
                   >
@@ -126,8 +102,8 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <a href='#dd'
+                  
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                     role="menuitem"
                   >
@@ -163,7 +139,8 @@ const Navbar = () => {
             </span>
           )}
         </div>
-      </div>
+   
+      
     </nav>
   );
 };
